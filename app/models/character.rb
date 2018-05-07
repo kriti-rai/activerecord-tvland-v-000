@@ -6,4 +6,8 @@ class Character < ActiveRecord::Base
     "Who dat where huh?"
   end
 
+  def catchphrase=
+    catchphrase
+  end
+
 end
