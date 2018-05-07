@@ -6,4 +6,8 @@ class Actor < ActiveRecord::Base
     p "#{self.first_name} + #{self.last_name}"
   end
 
+  def list_roles
+    self.shows.characters.find(self.id)
+  end
+
 end
